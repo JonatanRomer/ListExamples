@@ -79,8 +79,16 @@ namespace Sandbox
             // Case 8: Make some code that finds the
             // smallest element in the list, and prints the result
             // Tip: Think in detail about how you would do this manually
-
-
+            int lowestnumber = 4000;
+            int num = 0;
+            foreach (int lis in aListOfInt)
+            {
+                if(lis <= lowestnumber)
+                {
+                    lowestnumber = lis;
+                }
+            }
+            Console.WriteLine($"The lowest number is: {lowestnumber}");
 
 
 
